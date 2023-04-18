@@ -138,6 +138,7 @@ font-weight: 400;
 .foto-div{
 	display: flex;
 	justify-content: space-between;
+	margin-top: 1em;
 }
 .foto-foto img{
 	border-radius: 5px;
@@ -147,11 +148,11 @@ font-weight: 400;
 	color: #fff;
 	margin-left: 1em;
 }
-.foto-text span:nth-child(4){
-	margin-bottom: 1em;
-	margin-top: 1em;
+
+.name{
+	font-size: 1.7em;
 }
-.foto-text a{
+.plan a{
 	color:#fff;
 	font-size: 1.5em;
 
@@ -241,9 +242,10 @@ border-bottom: 1px solid #fff;
 	.box-list ul li {
 		font-size: 1em;
   }
-  .box1 span {
-	font-size: 1em;
-}
+  .name{
+	font-size: 1.3em;
+	
+  }
 .btn-send{
 	font-size: 14px;
 }
