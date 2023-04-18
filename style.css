@@ -118,7 +118,10 @@ font-weight: 400;
 	margin-top: 1em;
 }
 .foto-box h3{
-	color:#fff;
+	background: linear-gradient( to right, #f12711, #f5af19);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: #fff;
 	font-size: 1.3em;
 	text-align: center;
 	margin-bottom: .9em;
