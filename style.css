@@ -90,10 +90,12 @@ position: relative;
 	margin-top: 1em;
 	display: flex;
 	justify-content: space-between;
+	
  }
  .plan span{
 color: #fff;
 line-height: 1.4;
+font-weight: 400;
  }
  .plan span:first-child{
 	width: 40%;
@@ -168,12 +170,12 @@ font-weight:600;
 
 .box1 h2{
 	color: #fff;
-	font-weight: 200;
+	font-weight: 400;
 	font-size: 1.2em;
 	margin-top: 1em;
 }
 .box1 .box1-h2{
-	font-weight: 500;
+	font-weight: 600;
 	font-size: 1.4em;
 	margin-bottom: 1.5em;
 }
@@ -207,26 +209,12 @@ font-weight:600;
 	justify-content: flex-end;
 	padding-bottom: 2em;
 }
-.split{
-	color: #4facfe;
-	margin-bottom: .5em;
-	margin-top: .5em;
-	font-weight: bold;
-}
-.tel{
-	position: absolute;
-	top: 0;
-	right: 0;
-}
-.tel a{
-	color: #fff;
-	font-size: 2.2em;
-}
+
 .box-2 h2{
 	color: #fff;
 	font-size: 1.8em;
 	margin-bottom: .5em;
-	font-weight: 200;
+	font-weight: 400;
 }
 .box-list {
 	border-bottom: 1px solid #4facfe;
@@ -236,139 +224,14 @@ font-weight:600;
 	display: flex;
 	margin-bottom: .3em;
 }
-/* .box1 span{
-	background: linear-gradient( to right, #4facfe 0%, #00f2fe 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	color: #fff;
-	margin-top: .5em;
-} */
+
 .box-list ul li{
-	/* background:  linear-gradient(to right, #2980b9, #6dd5fa, #ffffff);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent; */
 	color: #fff;
 	font-size: 1.2em;
 	margin-bottom: .5em;
 	font-weight: 400;
 }
 
-
-.btn-send{
-	border: 1px solid #4facfe;
-	padding: 7px 20px;
-	cursor: pointer;
-	outline: none;
-	text-transform: uppercase;
-	background: rgba(0, 0, 0, 0.1);
-	font-weight: 600;
-	font-size: 18px;
-	border-radius: 2px;
-	margin-top: 2em;
-	border-radius: 5px;
-}
-.btn-send p{
-	background: linear-gradient( to right, #4facfe 0%, #00f2fe 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	color: #fff;
-}
-.btn-send:hover{
-border: 1px solid rgb(10, 221, 10);
-background: rgba(14, 214, 14, 0.4);
-}
-
-.modal{
-	width: 100%;
-	height: 100vh;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: rgba(0, 0, 0, 0.814);
-	display: none;
-	justify-content: center;
-	align-items: center;
-	z-index: 100000;
-}
-.modal.active{
-	display: flex;
-}
-.modal-box{
-	width: 50vw;
-height: auto;
-background: linear-gradient( to right, #4facfe 0%, #00f2fe 100%);
-border-radius: 10px;
-position: relative;
-padding: 20px 20px 20px 20px;
-}
-.modal-exit{
-	position: absolute;
-	font-size: 2em;
-	top: -35px;
-	right: -35px;
-	cursor: pointer;
-}
-.modal-btn{
-	background: rgba(255, 255, 255, 0.429);
-	padding: 5px 0px 5px 0px;
-	text-transform: uppercase;
-	font-size: 1em;
-	border: 1px solid #000;
-  color: #000;
-  max-width: 180px;
-}
-.modal-btn:hover{
-	background: rgb(8, 201, 8);
-}
-.formBx
-{
-  min-width: 60%;
-}
-.formBx form
-{
-  display: flex;
-  flex-direction: column;
-}
-.formBx form h3,
-.contactInfo h3
-{
-  color: #000;
-  font-size: 20px;
-  font-weight: 500;
-  margin-bottom: 10px;
-}
-.formBx form input,
-.formBx form textarea
-{
-  margin-bottom: 20px;
-  padding: 15px;
-  font-size: 16px;
-  background: transparent;
-  border: 1px solid #000;
-  outline: none;
-  resize: none;
-  color: #000;
-}
-.formBx form input::placeholder,
-.formBx form textarea::placeholder
-{
-  color: #000;
-}
-.formBx form textarea
-{
-  min-height: 200px;
-}
-.formBx form input[type="submit"]
-{
-  max-width: 180px;
-  background: rgb(238, 255, 0);
-  cursor: pointer;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  padding: 5px 5px 5px 5px;
-}
 
 @media screen and (max-width: 975px){
 	.box-2 a{
@@ -423,7 +286,7 @@ padding: 20px 20px 20px 20px;
 		margin-top: 0;
 	}
 	.box1 span{
-		font-weight: 200;
+		font-weight: 400;
 	}
 }
 
@@ -444,7 +307,7 @@ padding: 20px 20px 20px 20px;
 	font-size: .9em;
 }
 .box1 .box1-h2 {
-	font-weight: 200;
+	font-weight: 400;
 	font-size: 1.1em;
 }
 }

@@ -31,7 +31,7 @@
 
 	<!-- Event snippet for клик по телефону conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-	<script>
+	<!-- <script>
 		function gtag_report_conversion(url) {
 			var callback = function () {
 				if (typeof (url) != 'undefined') {
@@ -44,7 +44,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 			});
 			return false;
 		}
-	</script>
+	</script> -->
 
 </head>
 
@@ -52,23 +52,6 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 
 	<div class="main">
 		<div class="container">
-			<!-- <div class="modal">
-				<div class="modal-box">
-					<div class="modal-exit" onclick="closeModal();">
-						❌
-					</div>
-					<div class="formBx">
-						<form id="form_id">
-							<h3>Напишите нам и мы перезвоним с ответом</h3>
-							<input type="text" id="input_text" name="name" placeholder="Имя">
-
-							<input type="tel" name="phone" id="input_tel" placeholder="Телефон *" required>
-							<textarea name="message" id="input_message" placeholder="Ваше сообщение"></textarea>
-							<button class="modal-btn" type="submit">Отправить</button>
-						</form>
-					</div>
-				</div>
-			</div> -->
 			<div class="foto">
 				<div class="foto-box">
 					<h3>Лектор </h3>
@@ -105,11 +88,6 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 							г. Минск пр. Победителей 59
 						</span>
 					</div>
-					<!-- <div class="box-btn">
-						<button onclick="openModal();" class="btn-send">
-							<p>Задать вопрос</p>
-						</button>
-					</div> -->
 					<div class="">
 						<h2>
 							План мероприятия:
@@ -177,91 +155,12 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 						</div>
 					</div>
 
-					
-
-					<div class="qr-code">
-						<a href="http://qrcoder.ru" target="_blank"><img
-								src="http://qrcoder.ru/code/?%CA%EE%ED%F2%F0%EE%EB%FC+%E7%E0+%EA%E0%F7%E5%F1%F2%E2%EE%EC+%EF%F0%EE%E4%F3%EA%F6%E8%E8+-+%E7%E0%EB%EE%E3+%F3%F1%EF%E5%F5%E0+%EA%EE%EC%EF%E0%ED%E8%E8&4&0"
-								width="150" height="150" border="0" title="QR код"></a>
-					</div>
-
-					<!-- <span>Опыт более 10 лет | 200+ обьектов по монтажу | Соблюдение сроков | Связи | Недорого</span> -->
+				
 				</div>
 
-
-
-				<!-- <div class="tel">
-					<a onclick="return gtag_report_conversion('tel:80333613612');" href="tel:80333613612">+375 33
-						361-36-12</a>
-				</div> -->
-				<!-- <div class="box-2">
-					<div></div>
-					<div class="box1-2">
-						<div>
-							<img src="./5.webp" alt="">
-							<p>Консультация</p>
-						</div>
-						<div>
-							<img src="./11.webp" alt="">
-							<p>Проект</з>
-						</div>
-						<div>
-							<img src="./split.webp" alt="">
-							<p>Новая SPLIT система</p>
-						</div>
-					</div>
-				</div> -->
-
 			</main>
-
-
 		</div>
 	</div>
-
-	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-	<script type="text/javascript">
-
-
-		const token = '5562126487:AAGqX2TBd3toX15OgSCQ2yW55RNfgtBWQko'
-		const chat_id = '-1001794221917'
-		const uri_api = `https://api.telegram.org/bot${token}/sendMessage`
-
-
-
-		const btn = document.querySelector('.modal-btn')
-
-		document.getElementById('form_id').addEventListener('submit', function (e) {
-			e.preventDefault()
-			let messageForm = `<b>Заказ с сайта Отопление</b>\n`
-			messageForm += `<b> </b>\n`
-			messageForm += `<b>Сообщение: </b> <i>«${this.message.value}»</i>\n`
-			messageForm += `<b> </b>\n`
-			messageForm += `<b>Отправитель: ${this.name.value}</b> \n`
-			messageForm += `<b>Телефон:${this.phone.value} </b> \n`
-
-			axios.post(uri_api, {
-				chat_id,
-				parse_mode: 'html',
-				text: messageForm,
-			}).then(data => {
-				btn.innerHTML = 'Отправлено'
-				setTimeout(() => {
-					// closeModal()
-					btn.innerHTML = 'Отправить'
-				}, 2000)
-			}).then(data => {
-				document.getElementById('input_text').value = ''
-				document.getElementById('input_tel').value = ''
-				document.getElementById('input_message').value = ''
-			})
-		})
-		// }
-
-		function openModal() {
-			document.querySelector('.modal').classList.add('active')
-		}
-		const closeModal = () => document.querySelector('.modal').classList.remove('active')
-	</script>
 
 </body>
 
