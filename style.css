@@ -101,16 +101,18 @@ font-weight: 400;
 	width: 65%;
  }
 .seminar-box{
-	display: flex;
+	/* display: flex; */
 	margin-top: 3em;
 	padding-bottom: .5em;
 }
 .seminar-box p{
-	width: 35%;
+	/* width: 35%; */
+	text-transform: uppercase;
+	margin-bottom: 1em;
 }
 .seminar-box h1{
-	width: 65%;
-	padding-bottom: .5em;
+	/* width: 65%; */
+	padding-bottom: 1em;
 }
  .program{
 	margin-top: 1em;
@@ -142,7 +144,7 @@ font-weight: 400;
 }
 .foto-foto img{
 	border-radius: 5px;
-	width: 100px;
+	width: 100%;
 }
 .foto-text{
 	color: #fff;
@@ -150,11 +152,11 @@ font-weight: 400;
 }
 
 .name{
-	font-size: 1.7em;
+	font-size: 1.1em;
 }
 .plan a{
 	color:#fff;
-	font-size: 1.5em;
+	/* font-size: 1.5em; */
 
 }
 .foto-text span:first-child{
@@ -242,10 +244,7 @@ border-bottom: 1px solid #fff;
 	.box-list ul li {
 		font-size: 1em;
   }
-  .name{
-	font-size: 1.3em;
-	
-  }
+
 .btn-send{
 	font-size: 14px;
 }
@@ -293,7 +292,7 @@ border-bottom: 1px solid #fff;
 		font-size: 1.6em;
   }
   .box1 h1 {
-	font-size: 1.5em;
+	font-size: 2.2em;
 }
 .btn-send {
 	font-size: 11px;
@@ -308,12 +307,12 @@ border-bottom: 1px solid #fff;
 }
 @media screen and (max-width: 414px){
 	.box1 h1 {
-		font-size: 1.3em;
+		font-size: 2em;
   }
 }
 @media screen and (max-width: 375px){
 	.box1 h1 {
-		font-size: 1.2em;
+		font-size: 1.7em;
   }
   .box1-p p{
 	margin-top: 1em;
